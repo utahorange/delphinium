@@ -1,9 +1,9 @@
-##TTP initial access:
+TTP initial access:
 Drive by (exploit through services, malicious code in old web server, etc) - make sure versions are updated/secure?
 Compromised credentials - change creds
 Other remote services - secure authorized and just brick the rest
 
-###Initial access:
+Initial access:
 Firewall - block everything, reset state tables, airgap the workstation
 Service hardening/removing insecure remote services  - sql passwords, php functions, make sure ssh auth is working properly (may have to configure PAM)
 Change default creds
@@ -12,12 +12,12 @@ Allow service ports through, allow outbound connections  - monitor outbound (net
 Update critical services 
 More backups
 
-###Execution:
+Execution:
 Crontabs/check for running backdoors already in the environment
 Antivirus - chkrootkit, clamav
 User rights - /etc/sudoers, /etc/group
 
-###persistence/privesc:
+persistence/privesc:
 linpeas
 
 
